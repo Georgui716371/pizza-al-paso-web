@@ -2,7 +2,7 @@
  
 
 :root{
-    --color-logo:#00b3b3;
+    --color-logo:#ff8c1a;
 }
 
 body::-webkit-scrollbar {
@@ -122,8 +122,11 @@ header label{
 .inicio img {
     height: 400px;
     width: 400px;
-    border-radius: 40px 0 40px 0;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+ 
+    border-radius: 5px;
+    background: #ff8c1a;
+    box-shadow:  5px 5px 10px #ed8218,
+                 -5px -5px 10px #ff961c;
 }
 
 .inicio .inicio-div h3 span{
@@ -131,7 +134,13 @@ header label{
     color: var(--color-logo);
 
 }
+.inicio .inicio-div h3 span i{
+  
+    color: var(--color-logo);
+    width: 5px;
+    height: 5px;
 
+}
 .inicio .inicio-div .btn {
 
     
@@ -156,7 +165,7 @@ header label{
 
 
 }
-main{
+.main{
     background-color: var(--color-logo);
     height: auto;
     position: relative;
@@ -165,7 +174,7 @@ main{
 }
 
 
-main .menu-div{
+.main .menu-div{
 
 
 
@@ -179,7 +188,7 @@ main .menu-div{
 
 }
 
-main .titulo h3{
+.main .titulo h3{
    text-align: center;
    color: black;
    font-size: 3rem;
@@ -192,7 +201,7 @@ main .titulo h3{
 }
 
 
-main .menu-div .card-menu{
+.main .menu-div .card-menu{
     width:300px;
     padding:5px;
     margin: 70px;
@@ -201,7 +210,7 @@ main .menu-div .card-menu{
     
 }
 
-main .menu-div .card-menu img{
+.main .menu-div .card-menu img{
     width: 100%;
     height: 100%;
     margin: 1px;
@@ -209,39 +218,52 @@ main .menu-div .card-menu img{
 
 }
 
-main .menu-div .card-menu h3{
+.main .menu-div .card-menu h3{
 
     font-size: 2.8rem;
     font-family: sans-serif;
     margin: 1px;
     padding: 10px;
     font-weight: bold;
-
     text-align: center;
 }
-main .menu-div .card p{
+.main .menu-div .card p{
     padding: 10px;
     font-size: 12px;
     font-family:serif;
+    align-items: center;
+    display: block;
+    
+    
 }
-main .menu-div .card-menu button{
+.main .menu-div .card-menu p{
+ 
+    padding: 5px;
+    margin: 14px;
+
+}
+
+.main .menu-div .card-menu button{
 
     padding: 5px;
-    margin: 10px;
+ 
     height: 30px;
-    width: 150px;
-    border-radius: 12px 1px 12px 1px ;
+    width: 100%;
+    border-radius:4px;
     border: transparent;
     color:black;
-
-        
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
 }
+ 
 
-main .menu-div .card button:hover{
-    color:var(--color-logo);
+.main .menu-div .card-menu:hover{
+    transform: translateY(-15px);
+    transition:0.6s;
+    box-shadow: 0 12px 16px var(--color-logo);
 }
-
 
 @media(max-width:768px){
     html{
@@ -360,6 +382,54 @@ main .menu-div .card button:hover{
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+  
+  /*nosotros */
 
-  /*LOGIN*/
+  .nosotros-div{
+
+    padding-top: 75px;
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ 
+
+  }
+  .nosotros-div .titulo-nosotros h3{
+
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:serif;
+    
+  }
+  .nosotros-div .titulo-nosotros{
+    color: var(--color-logo);
+    padding: 15px;
+    margin: 15px;
+   
+
+  }
+
+  .nosotros-div .menu-nosotros-map{
+
+    width:100%;
+    height: 400px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+
+  }
+  .nosotros-div .menu-nosotros-map iframe{
+    
+    align-items: center;
+    width:800px;
+    height: 400px;
+
+  }
+
 
