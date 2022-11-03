@@ -123,10 +123,7 @@ header label{
     height: 400px;
     width: 400px;
  
-    border-radius: 5px;
-    background: #ff8c1a;
-    box-shadow:  5px 5px 10px #ed8218,
-                 -5px -5px 10px #ff961c;
+
 }
 
 .inicio .inicio-div h3 span{
@@ -215,6 +212,7 @@ header label{
     height: 100%;
     margin: 1px;
     padding: 2px;
+    border-radius:10px;
 
 }
 
@@ -262,7 +260,11 @@ header label{
 .main .menu-div .card-menu:hover{
     transform: translateY(-15px);
     transition:0.6s;
-    box-shadow: 0 12px 16px var(--color-logo);
+ 
+    border-radius: 20px;
+    background: var(--color-logo);
+    box-shadow:  5px 5px 0px #e67300,
+                 -5px -5px 0px #f58d25;
 }
 
 @media(max-width:768px){
@@ -427,9 +429,54 @@ header label{
   .nosotros-div .menu-nosotros-map iframe{
     
     align-items: center;
-    width:800px;
-    height: 400px;
+    width:1200px;
+    height: 900px;
 
   }
 
+  .nosotros-div .menu-nosotros{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: auto;
+    width: 90vw;
+    border-radius: 10px;
+    border: 1px solid #e67300;
+  }
+  .nosotros-div .menu-nosotros .columna-nosotros{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 12px;
+  }
+
+
+  .nosotros-div .menu-nosotros .columna-nosotros h3{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 4px;
+  }
+  .nosotros-div .menu-nosotros .columna-nosotros p{
+
+    font-family:serif;
+    font-weight: 1.2rem;
+
+
+}
+.nosotros-div .menu-nosotros .columna-historia {
+
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+     
+    align-items: center;
+    
+     
+
+}
+ 
+ 
